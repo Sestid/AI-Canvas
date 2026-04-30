@@ -91,9 +91,7 @@ const AudioNode = observer(({ id, data, selected }: NodeProps<AudioNodeData>) =>
           <textarea
             id={`script-${id}`}
             value={data.script || ''}
-            onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ script: e.target.value })}
             placeholder="输入台词内容... 使用上方按钮插入停顿和语气词"
             className="w-full px-3 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 resize-none nodrag"

@@ -85,9 +85,7 @@ const VideoNode = observer(({ id, data, selected }: NodeProps<VideoNodeData>) =>
             <label className="text-xs text-dark-400 mb-1.5 block">Prompt</label>
             <textarea
               value={data.prompt || ''}
-              onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+              onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ prompt: e.target.value })}
               placeholder="描述视频内容..."
               className="w-full px-3 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 resize-none nodrag"
@@ -107,9 +105,7 @@ const VideoNode = observer(({ id, data, selected }: NodeProps<VideoNodeData>) =>
             <label className="text-xs text-dark-400 mb-1.5 block">比例</label>
             <select
               value={data.aspectRatio || '16:9'}
-              onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+              onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ aspectRatio: e.target.value })}
               className="w-full px-2.5 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 nodrag"
             >
@@ -124,12 +120,7 @@ const VideoNode = observer(({ id, data, selected }: NodeProps<VideoNodeData>) =>
             <input
               type="number"
               value={data.duration || 5}
-              onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
-              onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+              onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ duration: Number(e.target.value) })}
               min="1"
               max="60"
@@ -143,9 +134,7 @@ const VideoNode = observer(({ id, data, selected }: NodeProps<VideoNodeData>) =>
           <label className="text-xs text-dark-400 mb-1.5 block">运镜</label>
           <select
             value={data.cameraMovement || 'none'}
-            onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ cameraMovement: e.target.value })}
             className="w-full px-2.5 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 nodrag"
           >
@@ -165,9 +154,7 @@ const VideoNode = observer(({ id, data, selected }: NodeProps<VideoNodeData>) =>
           <input
             type="checkbox"
             checked={data.enableAudio || false}
-            onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ enableAudio: e.target.checked })}
             className="w-4 h-4 rounded border-dark-600 bg-dark-800 text-primary-500 focus:ring-primary-500"
           />

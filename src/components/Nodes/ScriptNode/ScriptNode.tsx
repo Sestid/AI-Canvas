@@ -44,9 +44,7 @@ const ScriptNode = observer(({ id, data, selected }: NodeProps<ScriptNodeData>) 
           <label className="text-xs text-dark-400 mb-1.5 block">Prompt</label>
           <textarea
             value={data.prompt || ''}
-            onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ prompt: e.target.value })}
             placeholder="描述你想要生成的脚本..."
             className="w-full px-3 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 resize-none nodrag"
@@ -58,9 +56,7 @@ const ScriptNode = observer(({ id, data, selected }: NodeProps<ScriptNodeData>) 
           <label className="text-xs text-dark-400 mb-1.5 block">模型</label>
           <select
             value={data.model || 'gpt-4'}
-            onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ model: e.target.value })}
             className="w-full px-3 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 nodrag"
           >

@@ -102,9 +102,7 @@ const ToolNode = observer(({ id, data, selected }: NodeProps<ToolNodeData>) => {
           <label className="text-xs text-dark-400 mb-1.5 block">工具类型</label>
           <select
             value={data.toolType || 'character-turnaround'}
-            onMouseDown={(e) => e.stopPropagation()} onPointerDown={(e) => e.stopPropagation()} onClick={(e) => e.stopPropagation()}
-              onPointerDown={(e) => e.stopPropagation()}
-              onClick={(e) => e.stopPropagation()}
+            onMouseDown={(e) => e.stopPropagation()}
               onChange={(e) => updateNodeData({ toolType: e.target.value as any })}
             className="w-full px-3 py-2 bg-dark-900/50 border border-dark-700/50 rounded-lg text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary-500/50 nodrag"
           >
