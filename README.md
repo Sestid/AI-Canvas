@@ -147,7 +147,7 @@ yarn install
 npm run dev
 ```
 
-访问 [http://localhost:5173](http://localhost:5173) 查看应用
+访问 [http://localhost:3000](http://localhost:3000) 查看应用
 
 ### 构建生产版本
 
