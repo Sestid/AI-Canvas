@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(curl -s http://localhost:3000 | head -20)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(npm install react-hot-toast)",
+      "Bash(npm install antd)",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit -m \"feat: initial commit - AI Canvas 智能创作工作台\n\n- ✨ 实现基于 React Flow 的无限画布系统\n- ✨ 六大节点类型：文本、图片、视频、音频、脚本、工具箱\n- ✨ 拖拽创建节点，智能连线\n- ✨ 自动保存和导出功能\n- ✨ Toast 消息提示\n- ✨ 深色主题 + 毛玻璃效果\n- ✨ 右键菜单和快捷键支持\n- 📝 完善的 README 文档（中英文）\n- 🎨 专业级 UI 设计\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\")",
+      "Bash(git remote add origin https://github.com/Sestid/AI-Canvas.git)",
+      "Bash(git branch -M main)",
+      "Bash(git push -u origin main)"
+    ]
+  }
+}

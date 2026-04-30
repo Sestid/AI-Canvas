@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* React Flow 深色主题定制 */
+.react-flow-dark .react-flow__background {
+  background-color: #0a0a0c;
+}
+
+.react-flow-dark .react-flow__edge-path {
+  stroke: #0ea5e9;
+  stroke-width: 2;
+}
+
+.react-flow-dark .react-flow__edge.selected .react-flow__edge-path {
+  stroke: #38bdf8;
+}
+
+.react-flow-dark .react-flow__handle {
+  width: 8px;
+  height: 8px;
+  background-color: #0ea5e9;
+  border: 2px solid #1f1f27;
+}
+
+.react-flow-dark .react-flow__handle:hover {
+  background-color: #38bdf8;
+}
+
+/* Controls 样式 */
+.react-flow__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.react-flow__controls-button {
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: #a0a0ab !important;
+  width: 32px !important;
+  height: 32px !important;
+  transition: all 0.2s !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: white !important;
+}
+
+.react-flow__controls-button:last-child {
+  border-bottom: none !important;
+}
+
+/* MiniMap 样式 */
+.react-flow__minimap {
+  background-color: transparent !important;
+}
+
+.react-flow__minimap-mask {
+  fill: rgba(10, 10, 12, 0.8) !important;
+}
+
+/* Scrollbar 样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Input range 样式 */
+input[type='range'] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 4px;
+}
+
+input[type='range']::-webkit-slider-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  height: 4px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #0ea5e9;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  margin-top: -5px;
+  transition: all 0.2s;
+}
+
+input[type='range']::-webkit-slider-thumb:hover {
+  background: #38bdf8;
+  transform: scale(1.1);
+}
+
+input[type='range']::-moz-range-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  height: 4px;
+}
+
+input[type='range']::-moz-range-thumb {
+  background: #0ea5e9;
+  border: none;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+  transition: all 0.2s;
+}
+
+input[type='range']::-moz-range-thumb:hover {
+  background: #38bdf8;
+  transform: scale(1.1);
+}
+
+/* Checkbox 样式 */
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+/* 禁用节点内部拖拽 */
+.nodrag {
+  pointer-events: all;
+}
+
+/* 动画 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Selection 样式 */
+::selection {
+  background-color: rgba(14, 165, 233, 0.3);
+  color: white;
+}
