@@ -12,7 +12,7 @@
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06b6d4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
 
-[English](README.md) · [简体中文](README_CN.md) · [在线演示](#) · [报告问题](https://github.com/Sestid/AI-Canvas/issues)
+[English](README.md) · [简体中文](README_CN.md) · [在线演示](https://sestid.github.io/AI-Canvas/) · [报告问题](https://github.com/Sestid/AI-Canvas/issues)
 
 </div>
 
